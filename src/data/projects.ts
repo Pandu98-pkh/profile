@@ -2,13 +2,13 @@ export const projects = [
   {
     title: 'Website Event ITS',
     description: 'Microsoft Licensing webinar for Telkom University students, featuring benefits and implementation strategies.',
-    imageUrl: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7',
+    imageUrl: 'https://drive.google.com/u/0/drive-viewer/AKGpihZfaGMvKBpbMWgSQg7fNb5rJ4OBc4CZb4wumXx1J1ILlF1Ji5qWFCu5kKcBSjfm0EFscyTun4MgeZ6aiy09gRPhHWaUawrWdg=s2560',
     projectUrl: '#'
   },
   {
     title: 'Form Registrasi RS',
     description: 'Led streaming operations for various school events using OBS and vMix at SMA Negeri 1 Bangil.',
-    imageUrl: 'https://images.unsplash.com/photo-1576267423445-b2e0074d68a4',
+    imageUrl: 'src/img/DSC_0834ii71x1.jpg',
     projectUrl: '#'
   },
   {
