@@ -1,12 +1,12 @@
 export const projects = [
   {
-    title: 'Webinar Expedition',
+    title: 'Website Event ITS',
     description: 'Microsoft Licensing webinar for Telkom University students, featuring benefits and implementation strategies.',
     imageUrl: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7',
     projectUrl: '#'
   },
   {
-    title: 'Streaming Operations',
+    title: 'Form Registrasi RS',
     description: 'Led streaming operations for various school events using OBS and vMix at SMA Negeri 1 Bangil.',
     imageUrl: 'https://images.unsplash.com/photo-1576267423445-b2e0074d68a4',
     projectUrl: '#'
