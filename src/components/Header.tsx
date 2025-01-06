@@ -11,8 +11,8 @@ export default function Header() {
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-48 h-48 rounded-full overflow-hidden ring-4 ring-blue-500 dark:ring-blue-400">
             <img
-              src="https://drive.google.com/u/0/drive-viewer/AKGpihZfaGMvKBpbMWgSQg7fNb5rJ4OBc4CZb4wumXx1J1ILlF1Ji5qWFCu5kKcBSjfm0EFscyTun4MgeZ6aiy09gRPhHWaUawrWdg=s2560"
-              alt={personalInfo.name}
+              src="src/img/DSC_0834ii71x1.jpg"
+              //alt={personalInfo.name}
               className="w-full h-full object-cover"
             />
           </div>
