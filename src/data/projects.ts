@@ -8,7 +8,7 @@ export const projects = [
   {
     title: 'Form Registrasi RS',
     description: 'Led streaming operations for various school events using OBS and vMix at SMA Negeri 1 Bangil.',
-    imageUrl: 'src/img/DSC_0834ii71x1.jpg',
+    imageUrl: '../img/DSC_0834ii71x1.jpg',
     projectUrl: '#'
   },
   {
