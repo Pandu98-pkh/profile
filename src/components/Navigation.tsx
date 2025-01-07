@@ -1,6 +1,5 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import { useTheme } from '../hooks/useTheme';
 import ThemeToggle from './ThemeToggle';
 
 interface NavigationProps {
