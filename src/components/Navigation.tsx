@@ -1,6 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { useTheme } from '../hooks/useTheme';
+import ThemeToggle from './ThemeToggle';
 
 interface NavigationProps {
   currentPage: string;
@@ -9,7 +10,6 @@ interface NavigationProps {
 
 export default function Navigation({ currentPage, setCurrentPage }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const { theme } = useTheme();
 
   const menuItems = [
     { id: 'cv', label: 'CV Creative' },
@@ -40,25 +40,29 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
                 {item.label}
               </button>
             ))}
+            <ThemeToggle />
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2"
-            aria-label="Toggle menu"
-          >
-            {isOpen ? (
-              <X className="w-6 h-6 text-gray-600 dark:text-gray-300" />
-            ) : (
-              <Menu className="w-6 h-6 text-gray-600 dark:text-gray-300" />
-            )}
-          </button>
+          <div className="md:hidden flex items-center space-x-2">
+            <ThemeToggle />
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 text-gray-900 dark:text-white"
+              aria-label="Toggle menu"
+            >
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden py-4">
+          <div className="md:hidden py-4 bg-white dark:bg-gray-900">
             {menuItems.map((item) => (
               <button
                 key={item.id}
