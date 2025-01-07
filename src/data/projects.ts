@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'Website Event ITS',
     description: 'Microsoft Licensing webinar for Telkom University students, featuring benefits and implementation strategies.',
-    imageUrl: '/img/Cuplikan layar_7-1-2025_8567_fp-bst-aw.vercel.app.jpeg',
+    imageUrl: '../img/Cuplikan layar_7-1-2025_8567_fp-bst-aw.vercel.app.jpeg',
     projectUrl: '#'
   },
   {
