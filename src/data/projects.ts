@@ -14,7 +14,7 @@ export const projects = [
   {
     title: 'Ecoprint Training',
     description: 'Organized and managed Ecoprint Training 2021 in collaboration with Yayasan Pengembangan Batik Reksa Natura Indonesia.',
-    imageUrl: 'https://images.unsplash.com/photo-1544867885-2333f61544ad',
+    imageUrl: 'https://img.freepik.com/premium-photo/colorful-background-with-yellow-blue-geometric-pattern_481527-25413.jpg?semt=ais_hybrid',
     projectUrl: '#'
   }
 ];
