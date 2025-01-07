@@ -4,13 +4,13 @@ export const projects = [
     title: 'Website Event ITS',
     description: 'Microsoft Licensing webinar for Telkom University students, featuring benefits and implementation strategies.',
     imageUrl: images.eventITS,
-    projectUrl: '#'
+    projectUrl: 'https://fp-bst-aw.vercel.app/'
   },
   {
     title: 'Form Registrasi RS',
     description: 'Led streaming operations for various school events using OBS and vMix at SMA Negeri 1 Bangil.',
     imageUrl: images.formRS,
-    projectUrl: '#'
+    projectUrl: 'https://fp-bst-bw.vercel.app/home.html'
   },
   {
     title: 'Ecoprint Training',
