@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, Phone } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
+import { images } from '../data/images';
 
 export default function Header() {
   return (
@@ -11,7 +12,7 @@ export default function Header() {
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-48 h-48 rounded-full overflow-hidden ring-4 ring-blue-500 dark:ring-blue-400">
             <img
-              src="/img/DSC_0834ii71x1.jpg"
+              src= {images.avatar}
               alt={personalInfo.name}
               className="w-full h-full object-cover"
             />
