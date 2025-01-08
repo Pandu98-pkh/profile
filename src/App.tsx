@@ -1,18 +1,21 @@
 import { ThemeProvider } from './hooks/useTheme';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Portfolio from './components/Portfolio';
 import CV from './components/CV';
-import { useState } from 'react';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('cv');
-
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
-        <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
-        {currentPage === 'cv' ? <CV /> : <Portfolio />}
-      </div>
+      <BrowserRouter>
+        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
+          <Navigation />
+          <Routes>
+            <Route path="/" element={<CV />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

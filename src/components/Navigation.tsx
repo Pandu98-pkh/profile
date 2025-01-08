@@ -1,24 +1,17 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { useTheme } from '../hooks/useTheme';
 import ThemeToggle from './ThemeToggle';
 
-interface NavigationProps {
-  currentPage: string;
-  setCurrentPage: (page: string) => void;
-}
-
-export default function Navigation({ currentPage, setCurrentPage }: NavigationProps) {
+export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const menuItems = [
-    { id: 'cv', label: 'CV Creative' },
-    { id: 'portfolio', label: 'Portfolio' },
+    { path: '/', label: 'CV Creative' },
+    { path: '/portfolio', label: 'Portfolio' },
   ];
-
-  const handleNavClick = (pageId: string) => {
-    setCurrentPage(pageId);
-    setIsOpen(false);
-  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md">
@@ -29,22 +22,21 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {menuItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => handleNavClick(item.id)}
+              <Link
+                key={item.path}
+                to={item.path}
                 className={`text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors ${
-                  currentPage === item.id ? 'text-blue-600 dark:text-blue-400 font-semibold' : ''
+                  location.pathname === item.path ? 'text-blue-600 dark:text-blue-400 font-semibold' : ''
                 }`}
               >
                 {item.label}
-              </button>
+              </Link>
             ))}
             <ThemeToggle />
           </div>
 
           <div className="md:hidden flex items-center space-x-2">
             <ThemeToggle />
-            {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 text-gray-900 dark:text-white"
@@ -63,15 +55,16 @@ export default function Navigation({ currentPage, setCurrentPage }: NavigationPr
         {isOpen && (
           <div className="md:hidden py-4 bg-white dark:bg-gray-900">
             {menuItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => handleNavClick(item.id)}
+              <Link
+                key={item.path}
+                to={item.path}
+                onClick={() => setIsOpen(false)}
                 className={`block w-full text-left py-2 px-4 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 ${
-                  currentPage === item.id ? 'text-blue-600 dark:text-blue-400 font-semibold' : ''
+                  location.pathname === item.path ? 'text-blue-600 dark:text-blue-400 font-semibold' : ''
                 }`}
               >
                 {item.label}
-              </button>
+              </Link>
             ))}
           </div>
         )}
