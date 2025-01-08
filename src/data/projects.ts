@@ -2,7 +2,7 @@ import { images } from '../data/images';
 export const projects = [
   {
     title: 'Website Event ITS',
-    description: 'Proyek akhir Bootcamp Advanced SCHEMATICS 2024 ITS ini adalah pengembangan Website Event ITS menggunakan React. Website ini dirancang untuk memberikan informasi lengkap mengenai acara yang diselenggarakan ITS, termasuk fitur jadwal acara dan pendaftaran. Proyek ini menunjukkan kemampuan saya dalam menggunakan React untuk membuat antarmuka pengguna yang interaktif dan responsif pada tahun 2024.',
+    description: 'Proyek akhir Bootcamp Advanced SCHEMATICS 2024 ITS ini adalah pengembangan Website Event ITS menggunakan Tailwind CSS dan React Js. Website ini dirancang untuk memberikan informasi lengkap mengenai acara yang diselenggarakan ITS, termasuk fitur jadwal acara dan pendaftaran. Proyek ini menunjukkan kemampuan saya dalam menggunakan React untuk membuat antarmuka pengguna yang interaktif dan responsif pada tahun 2024.',
     imageUrl: images.eventITS,
     projectUrl: 'https://fp-bst-aw.vercel.app/'
   },
