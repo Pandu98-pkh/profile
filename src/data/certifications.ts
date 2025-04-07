@@ -1,3 +1,5 @@
+import { file } from "./file";
+
 export const certifications = [
   {
     title: "Belajar Dasar AI",
@@ -5,7 +7,7 @@ export const certifications = [
     issued: "Des 2024",
     expires: "Des 2027",
     credentialId: "6RPNY2ENRZ2MID",
-    imageUrl: "../src/certifications/sertifikat_course_653_742877_121224084836.pdf",
+    imageUrl: file.sc653,
   },
   {
     title: "Belajar Membuat Front-End Web untuk Pemula",
