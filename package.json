@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@pdftron/webviewer": "^11.3.0",
     "lucide-react": "^0.344.0",
     "pdf2image": "^1.2.3",
     "pdfjs-dist": "^5.1.91",
