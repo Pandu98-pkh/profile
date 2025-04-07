@@ -1,6 +1,15 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { certifications } from '../data/certifications';
-import { Award, X } from 'lucide-react';
+import { Award, File, X } from 'lucide-react';
+
+interface Certification {
+  title: string;
+  issuer: string;
+  issued: string;
+  expires: string;
+  credentialId: string;
+  imageUrl: string;
+}
 
 interface CertificationModal {
   isOpen: boolean;
@@ -61,11 +70,9 @@ export default function Certifications() {
                       onClick={() => openModal(cert.imageUrl)}
                     >
                       {cert.imageUrl.endsWith('.pdf') ? (
-                        <embed
-                          src={`${cert.imageUrl}#page=1`}
-                          type="application/pdf"
-                          className="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
-                        />
+                        <div className="w-full h-40 flex items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-lg">
+                          <File className="w-16 h-16 text-gray-500 dark:text-gray-400" />
+                        </div>
                       ) : (
                         <img 
                           src={cert.imageUrl}
