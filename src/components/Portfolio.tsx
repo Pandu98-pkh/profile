@@ -1,6 +1,7 @@
 import Header from './Header';
 import ProjectCard from './ProjectCard';
 import { projects } from '../data/projects';
+import Footer from './Footer'; 
 
 export default function Portfolio() {
   return (
@@ -18,6 +19,7 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

@@ -2,6 +2,14 @@ import { file } from "./file";
 
 export const certifications = [
   {
+    title: "EPrT® (English Profi ciency Test)",
+    issuer: "Telkom University Language Center",
+    issued: "Mar 2025",
+    expires: "Mar 2027",
+    credentialId: "11213/SPI3-B/BHS/2025",
+    imageUrl: file.eprt,
+  },
+  {
     title: "Belajar Dasar AI",
     issuer: "Dicoding Indonesia",
     issued: "Des 2024",

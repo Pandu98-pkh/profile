@@ -12,10 +12,11 @@ import sc382 from '../certifications/sertifikat_course_382_742877_220723150517.p
 import sc570 from '../certifications/sertifikat_course_570_742877_141023181640.pdf';
 import sc600 from '../certifications/sertifikat_course_600_742877_161023021319.pdf';
 import sc653 from '../certifications/sertifikat_course_653_742877_121224084836.pdf';
+import eprt from '../certifications/Sertif EPrT.pdf'
 
 // Ekspor objek dengan semua sertifikat
 export const file = {
   sc51, sc80, sc86, sc120, sc177, 
   sc237, sc251, sc256, sc315, sc382, 
-  sc570, sc600, sc653
+  sc570, sc600, sc653, eprt
 };
