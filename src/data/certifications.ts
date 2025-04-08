@@ -2,7 +2,7 @@ import { file } from "./file";
 
 export const certifications = [
   {
-    title: "EPrT® (English Profi ciency Test)",
+    title: "EPrT® (English Proficiency Test)",
     issuer: "Telkom University Language Center",
     issued: "Mar 2025",
     expires: "Mar 2027",
