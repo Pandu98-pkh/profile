@@ -31,7 +31,7 @@ export const certifications = [
     issued: "Okt 2023",
     expires: "Okt 2026",
     credentialId: "NVP78W6GRXR0",
-    imageUrl: "https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?auto=format&fit=crop&w=800&q=80"
+    imageUrl: file.sc600
   },
   {
     title: "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software",
@@ -39,7 +39,7 @@ export const certifications = [
     issued: "Okt 2023",
     expires: "Okt 2026",
     credentialId: "MRZMLVENKXYQ",
-    imageUrl: "https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?auto=format&fit=crop&w=800&q=80"
+    imageUrl: file.sc237
   },
   {
     title: "Belajar Dasar-Dasar DevOps",
@@ -47,7 +47,7 @@ export const certifications = [
     issued: "Jul 2023",
     expires: "Jul 2026",
     credentialId: "1OP80VML1XQK",
-    imageUrl: "https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?auto=format&fit=crop&w=800&q=80"
+    imageUrl: file.sc382
   },
   {
     title: "Memulai Pemrograman dengan Kotlin",
@@ -55,7 +55,7 @@ export const certifications = [
     issued: "Jul 2023",
     expires: "Jul 2026",
     credentialId: "0LZ09N6JNZ65",
-    imageUrl: "https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?auto=format&fit=crop&w=800&q=80"
+    imageUrl: file.sc80
   },
   {
     title: "Belajar Dasar Pemrograman JavaScript",
@@ -63,7 +63,7 @@ export const certifications = [
     issued: "Jan 2023",
     expires: "Jan 2026",
     credentialId: "EYX49G65OPDL",
-    imageUrl: "https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?auto=format&fit=crop&w=800&q=80"
+    imageUrl: file.sc256
   },
   {
     title: "Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)",
@@ -71,7 +71,7 @@ export const certifications = [
     issued: "Jan 2023",
     expires: "Jan 2026",
     credentialId: "NVP795O2GZR0",
-    imageUrl: "https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?auto=format&fit=crop&w=800&q=80"
+    imageUrl: file.sc251
   },
   {
     title: "Memulai Pemrograman Dengan C",
@@ -79,7 +79,7 @@ export const certifications = [
     issued: "Nov 2022",
     expires: "Nov 2025",
     credentialId: "JLX1LW5K6X72",
-    imageUrl: "https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?auto=format&fit=crop&w=800&q=80"
+    imageUrl: file.sc120
   }  
   // Add other certifications similarly
 ];
