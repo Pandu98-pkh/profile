@@ -15,7 +15,7 @@ export const certifications = [
     issued: "Nov 2023",
     expires: "Nov 2026",
     credentialId: "JLX1WQWOJP72",
-    imageUrl: "https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?auto=format&fit=crop&w=800&q=80"
+    imageUrl: file.sc315,
   },
   {
     title: "Belajar Dasar Manajemen Proyek",
@@ -23,7 +23,7 @@ export const certifications = [
     issued: "Okt 2023",
     expires: "Okt 2026",
     credentialId: "0LZ0QJ26QZ65",
-    imageUrl: "https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?auto=format&fit=crop&w=800&q=80"
+    imageUrl: file.sc570
   },
   {
     title: "Belajar Dasar Structured Query Language (SQL)",
