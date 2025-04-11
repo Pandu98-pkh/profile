@@ -45,6 +45,7 @@ export const experience = [
       "Merancang dan melaksanakan konsep dan strategi event di masa pandemi COVID-19 dengan pendekatan kolaborasi offline dan online, menghasilkan solusi inovatif dan responsif."
     ],
     items: [
+      images.pOSIS
     ]
   }
 ];
