@@ -1,7 +1,10 @@
+import { images } from "./images";
+
 export const achievements = [
   {
     title: "Best Student Bootcamp Basic",
     event: "Bootcamp and Seminar of Technology Schematics 2024",
-    organization: "Institut Teknologi Sepuluh Nopember"
+    organization: "Institut Teknologi Sepuluh Nopember",
+    imageUrl: images.bestBSTBasic
   }
 ];

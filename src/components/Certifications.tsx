@@ -1,15 +1,6 @@
 import { useState } from 'react';
 import { certifications } from '../data/certifications';
-import { Award, File, X } from 'lucide-react';
-
-interface Certification {
-  title: string;
-  issuer: string;
-  issued: string;
-  expires: string;
-  credentialId: string;
-  imageUrl: string;
-}
+import { Award, X, FileText } from 'lucide-react';
 
 interface CertificationModal {
   isOpen: boolean;
@@ -70,8 +61,10 @@ export default function Certifications() {
                       onClick={() => openModal(cert.imageUrl)}
                     >
                       {cert.imageUrl.endsWith('.pdf') ? (
-                        <div className="w-full h-40 flex items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-lg">
-                          <File className="w-16 h-16 text-gray-500 dark:text-gray-400" />
+                        <div className="w-full h-40 flex flex-col items-center justify-center bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-300">
+                          <FileText className="w-16 h-16 text-red-500 dark:text-red-400" />
+                          <p className="text-gray-700 dark:text-gray-300 mt-2 font-medium">PDF Certificate</p>
+                          <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">Click to view</p>
                         </div>
                       ) : (
                         <img 
