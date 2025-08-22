@@ -1,11 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
 
-// Set up the worker
-pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.js',
-  import.meta.url
-).toString();
+// Set up the worker - use a different approach for Vite
+pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
 
 interface PDFPreviewProps {
   pdfUrl: string;
