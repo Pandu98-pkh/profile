@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { certifications } from '../data/certifications';
 import { Award, X, FileText } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import PDFPreview from './PDFPreview';
 
 interface CertificationModal {
   isOpen: boolean;
@@ -143,11 +144,11 @@ export default function Certifications() {
                         }}
                       >
                         {cert.imageUrl.endsWith('.pdf') ? (
-                          <div className="w-full h-40 flex flex-col items-center justify-center bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-300 group">
-                            <FileText className="w-16 h-16 text-red-500 dark:text-red-400 transition-transform duration-300 group-hover:scale-110" />
-                            <p className="text-gray-700 dark:text-gray-300 mt-2 font-medium group-hover:text-red-500 dark:group-hover:text-red-400 transition-colors duration-300">PDF Certificate</p>
-                            <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">Click to view</p>
-                          </div>
+                          <PDFPreview
+                            pdfUrl={cert.imageUrl}
+                            alt={cert.title}
+                            className="hover:shadow-lg transition-shadow duration-300"
+                          />
                         ) : (
                           <img 
                             src={cert.imageUrl}
